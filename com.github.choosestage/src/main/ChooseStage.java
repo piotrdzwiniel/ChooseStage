@@ -21,9 +21,9 @@ Sample of use:
 int option = 0;
 String[] buttons = {"Yes", "No"};
 DialogChooseScreen window = new DialogChooseScreen(buttons, "Question",
-		"Are you sure you want to close The Application?", 350, 120);
+		"Are you sure you want to close The Application?", 350, 100);
 window.showAndWait();
-option = window.getChosenOption();
+option = window.getOption();
 
 if (option == 1) {
 	System.exit(-1);
