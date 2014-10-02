@@ -19,10 +19,14 @@ import javafx.stage.Stage;
 Sample of use:
  
 int option = 0;
+
 String[] buttons = {"Yes", "No"};
-DialogChooseScreen window = new DialogChooseScreen(buttons, "Question",
-		"Are you sure you want to close The Application?", 350, 100);
+
+ChooseStage window = new ChooseStage(buttons, "Question",
+"Are you sure you want to close The Application?", 350, 100);
+
 window.showAndWait();
+
 option = window.getOption();
 
 if (option == 1) {
